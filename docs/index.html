@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <head>
     <title>My page</title>
+    <meta name=viewport content="width=device-width,inital-scale=1">
+    <meta charset="utf-8" />
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
 </head>
 <body>
     <h1>GeoGebra Test Page</h1>
+    <div id="ggb_element"></div>
+
+    <script>
+    var params = {"appName": "graphing", "width": 800, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true , filename: "triangleApp.ggb"};
+    var applet = new GGBApplet(params, true);
+    window.addEventListener("load", function() { 
+        applet.inject('ggb-element');
+    });
+</script>
     
 </body>
