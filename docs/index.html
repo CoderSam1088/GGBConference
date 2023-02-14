@@ -8,7 +8,7 @@
 
 
 </head>
-
+<!--
 <body>
     <h1>GeoGebra Test Page</h1>
     <div id="ggb_element"></div>
@@ -29,5 +29,43 @@
 </script>
     
 </body>
+</html>
+-->
 
 <body>
+
+
+    
+        <h2>Interactive Figure</h2>
+        <div id="interactive_figure1"></div>
+
+            <script type="text/javascript">
+                 var parameters1 = {
+                            "width":800,
+                            "height":860,
+                            "preventFocus":true,
+                            "prerelease":false,
+                            "showToolBar":false,
+                            "borderColor":null,
+                            "showMenuBar":false,
+                            "showAlgebraInput":false,
+                            "showResetIcon":false,
+                            "showFullscreenButton":true,
+                            "enableLabelDrags":false,
+                            "enableShiftDragZoom":false,
+                            "enableRightClick":false,
+                            "capturingThreshold":null,
+                            "showToolBarHelp":false,
+                            "errorDialogsActive":true,
+                            "useBrowserForJS":false,
+                            "filename": "GGBConference/assets/triangleApp.ggb"
+                           };
+                       
+                    window.onload = function() { 
+                        var applet1 = new GGBApplet(parameters1, true);
+                        applet1.inject(interactive_figure1);
+                        }
+            </script>
+    
+    </body>
+    </html>
