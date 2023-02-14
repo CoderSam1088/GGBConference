@@ -8,12 +8,18 @@
 <body>
     <h1>GeoGebra Test Page</h1>
     <div id="ggb_element"></div>
+    <div>2nd attempt</div>
+    <div id="ggb_element1"></div>
 
     <script>
-    var params = {"width": 800, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true , filename: "triangleApp.ggb"};
+    var params = {"width": 800, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true , filename: "assets/triangleApp.ggb"};
+    var params1 = {"width": 800, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true , filename: "triangleApp.ggb"};
+
     var applet = new GGBApplet(params, true);
+    var applet1 = new GGBApplet(params1, true);
     window.onload = function() { 
         applet.inject('ggb-element');
+        applet.inject('ggb-element1');
     }
 </script>
     
